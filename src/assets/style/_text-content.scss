@@ -2,7 +2,8 @@
 %text-content {
 	--p-magrin: 16px;
 
-	&__title {}
+	&__title {
+	}
 
 	p {
 		margin: var(--p-magrin) 0;
@@ -26,11 +27,12 @@
 
 	ul,
 	ol {
+		list-style-type: none;
 		margin: var(--p-magrin) 0;
 		list-style-position: inside;
 
 		li {
-			&:nth-child(n+2) {
+			&:nth-child(n + 2) {
 				margin-top: 8px;
 			}
 		}

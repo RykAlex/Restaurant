@@ -38,17 +38,14 @@
 }
 .header__row-content {
 	max-width: 437px;
-	font-family: "Nunito";
-
 	color: #fff;
 }
 .row-content-title {
-	margin-bottom: 52px;
+	margin-bottom: 3.25rem;
 }
 .row-content-title span {
-	color: #ff5c00;
+	color: $pumpkin;
 }
 .row-content-text {
-	font-family: inherit;
-	font-size: 16px;
+	font-size: 1rem;
 }

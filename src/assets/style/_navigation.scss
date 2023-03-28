@@ -1,0 +1,21 @@
+.nav {
+	margin-top: 40px;
+}
+ul.nav__list {
+	list-style-type: none;
+}
+.nav__list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 24px;
+	overflow-x: auto;
+}
+
+.nav__items {
+	white-space: nowrap;
+}
+
+.nav__items:last-child {
+	gap: 0;
+}
