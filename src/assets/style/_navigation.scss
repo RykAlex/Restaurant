@@ -10,12 +10,36 @@ ul.nav__list {
 	justify-content: space-between;
 	gap: 24px;
 	overflow-x: auto;
+	overflow-y: hidden;
 }
 
-.nav__items {
+a.nav__link {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
 	white-space: nowrap;
+	background-color: $white;
+	border-radius: 3.125rem;
+	padding: 0.5em 0.875em;
+	border: 1px solid transparent;
+	&--active {
+		background: $orange;
+		pointer-events: none;
+	}
+	&:focus {
+		border: 1px solid $orange;
+	}
+	&:hover {
+		border: 1px solid $orange;
+	}
 }
-
-.nav__items:last-child {
-	gap: 0;
+.nav__link-img {
+	width: 24px;
+	height: 24px;
+	margin-right: 8px;
+	& img {
+		height: 100%;
+		width: 100%;
+	}
 }
