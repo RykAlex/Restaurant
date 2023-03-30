@@ -1,6 +1,5 @@
 .header {
 	position: relative;
-	padding-bottom: 63px;
 	overflow: hidden;
 }
 .header::before {
@@ -43,9 +42,6 @@
 }
 
 @media screen and (max-width: $mobile) {
-	.header {
-		padding-bottom: 30px;
-	}
 	.header__row {
 		flex-direction: column-reverse;
 		text-align: center;

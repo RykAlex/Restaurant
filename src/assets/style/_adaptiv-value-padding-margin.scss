@@ -27,6 +27,10 @@ $maxWidthContainer: 1170;
 	}
 }
 
+// Header
+.header {
+	@include adaptiv-value("padding-bottom", 63, 30, 0);
+}
 .row-content-title {
 	@include adaptiv-value("margin-bottom", 52, 16, 0);
 }
