@@ -7,3 +7,25 @@
 	outline: none;
 	border: none;
 }
+.order__btn {
+	white-space: nowrap;
+	border: none;
+	outline: none;
+	@include adaptiv-font(16, 12);
+	color: $white;
+	@include adaptiv-value("margin-top", 24, 19, 0);
+	@include adaptiv-value("padding-left", 71, 93, 0);
+	@include adaptiv-value("padding-right", 71, 93, 0);
+	@include adaptiv-value("padding-top", 12, 9, 0);
+	@include adaptiv-value("padding-bottom", 12, 9, 0);
+	border-radius: 10px;
+	background-color: $pumpkin;
+	&:hover {
+		cursor: pointer;
+		background-color: $orange;
+	}
+	&:active,
+	&:focus {
+		background-color: #f86310;
+	}
+}
