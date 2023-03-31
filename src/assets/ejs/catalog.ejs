@@ -3,11 +3,11 @@
 		<div class="catalog__wrapper">
 			<div class="cart__wrapper">
 				<div class="cart__amount">
-					<div class="cart__title">Карзина</div>
+					<div class="cart__title">Корзина</div>
 					<div class="cart__quantity">4</div>
 				</div>
 				<div class="cart__item-wrapper">
-					<!-- Карточка товара в карзине -->
+					<!-- Карточка товара в корзине -->
 					<div class="cart__item">
 						<div class="cart__item-img">
 							<img src="./assets/static/img/super_cheese.png" alt="" />
@@ -27,8 +27,8 @@
 							</button>
 						</div>
 					</div>
-					<!-- / Карточка товара в карзине -->
-					<!-- Карточка товара в карзине -->
+					<!-- / Карточка товара в корзине -->
+					<!-- Карточка товара в корзине -->
 					<div class="cart__item">
 						<div class="cart__item-img">
 							<img src="./assets/static/img/french-fries.png" alt="" />
@@ -48,8 +48,8 @@
 							</button>
 						</div>
 					</div>
-					<!-- / Карточка товара в карзине -->
-					<!-- Карточка товара в карзине -->
+					<!-- / Карточка товара в корзине -->
+					<!-- Карточка товара в корзине -->
 					<div class="cart__item">
 						<div class="cart__item-img">
 							<img src="./assets/static/img/hotdog-spacy.png" alt="" />
@@ -59,7 +59,18 @@
 							<div class="cart__item-content-weigth">245г</div>
 							<div class="cart__item-content-cost">239₽</div>
 						</div>
-						<div class="cart__item-quantity">
+						<div class="quantity">
+							<div class="quantity__button quantity__button--subtract">-</div>
+							<input
+								type="number"
+								class="quantity__input"
+								min="0"
+								max="10"
+								step="2"
+							/>
+							<div class="quantity__button quantity__button--add">+</div>
+						</div>
+						<!-- <div class="cart__item-quantity">
 							<button class="cart__item-amount">
 								<div class="icon-minus"></div>
 							</button>
@@ -67,9 +78,9 @@
 							<button class="cart__item-amount">
 								<div class="icon-add"></div>
 							</button>
-						</div>
+						</div> -->
 					</div>
-					<!-- / Карточка товара в карзине -->
+					<!-- / Карточка товара в корзине -->
 				</div>
 				<div class="cart__total">
 					<div class="cart__total-text">Итого</div>
@@ -156,5 +167,6 @@
 				</div>
 			</div>
 		</div>
+		<%-include('/src/assets/ejs/popup') %>
 	</div>
 </section>

@@ -20,6 +20,7 @@
 	@include adaptiv-value("padding-bottom", 12, 9, 0);
 	border-radius: 10px;
 	background-color: $pumpkin;
+	width: 100%;
 	&:hover {
 		cursor: pointer;
 		background-color: $orange;
