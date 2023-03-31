@@ -77,6 +77,9 @@
 .cart__item-content-cost {
 	color: $black;
 }
+
+// Карзина добавление и удаление товара
+
 .cart__item-quantity {
 	display: flex;
 	align-items: center;
@@ -145,6 +148,8 @@ input[type="number"]::-webkit-outer-spin-button {
 		cursor: pointer;
 	}
 }
+// ============================================
+
 .cart__total {
 	display: flex;
 	justify-content: space-between;
@@ -174,13 +179,15 @@ input[type="number"]::-webkit-outer-spin-button {
 .delivery__text {
 	@include adaptiv-font(12, 10);
 }
+
+// Каталог товара
+
 .catalog__products {
 	display: grid;
 	grid-template-columns: repeat(3, minmax(137px, 1fr));
 	gap: 30px;
 }
-// .products__item {
-// }
+
 .card {
 	display: flex;
 	flex-direction: column;
@@ -249,6 +256,8 @@ input[type="number"]::-webkit-outer-spin-button {
 		pointer-events: none;
 	}
 }
+
+// Медиа запросы
 
 @media screen and (max-width: $mobile) {
 	.catalog__wrapper {

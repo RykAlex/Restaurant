@@ -1,1 +1,101 @@
-footer {}
+.footer {
+	@include adaptiv-value("padding-top", 51, 24, 0);
+	@include adaptiv-value("padding-bottom", 40, 26, 0);
+	@include adaptiv-value("margin-top", 100, 80, 0);
+}
+.footer__wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-bottom: 34px;
+}
+
+.footer__logo-img {
+	@include adaptiv-value("width", 300, 196, 0);
+	@include adaptiv-value("height", 58, 38, 0);
+	// & img {
+	// 	width: 100px;
+	// 	height: 100%;
+	// 	object-fit: cover;
+	// }
+}
+.footer__wrapper-contacts {
+	display: flex;
+	justify-content: space-between;
+}
+.footer__contacts {
+	margin-right: 126px;
+}
+.contacts__text {
+	@include adaptiv-font(24, 18);
+	font-weight: 400;
+	@include adaptiv-value("margin-bottom", 24, 8, 0);
+}
+.contacts__phone {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.contacts__phone-icon {
+	mask-image: url(/assets/static/img/icon/call.svg);
+	-webkit-mask-image: url(/assets/static/img/icon/call.svg);
+	background-color: $black;
+	mask-repeat: no-repeat;
+	-webkit-mask-repeat: no-repeat;
+	mask-position: center center;
+	-webkit-mask-position: center center;
+	mask-size: contain;
+	-webkit-mask-size: contain;
+	width: 24px;
+	height: 24px;
+	margin-right: 5px;
+}
+.contacts__phone-number {
+	@include adaptiv-font(16, 12);
+}
+
+.socials__text {
+	@include adaptiv-font(24, 18);
+	font-weight: 400;
+	@include adaptiv-value("margin-bottom", 22, 5, 0);
+}
+.socials__icon {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 16px;
+}
+.socials__icon-vk,
+.socials__icon-telegram {
+	width: 36px;
+	height: 36px;
+	& img {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+}
+
+.footer__copyright {
+}
+.copyright__conpany,
+.copyright__design {
+	@include adaptiv-font(16, 12);
+}
+
+@media screen and (max-width: $mobile) {
+	.footer__wrapper {
+		flex-direction: column;
+		margin-bottom: 22px;
+	}
+	.footer__logo-img {
+		margin-bottom: 24px;
+	}
+	.footer__wrapper-contacts {
+		flex-direction: column;
+		margin-bottom: 24px;
+	}
+	.footer__contacts {
+		margin-bottom: 24px;
+	}
+}
