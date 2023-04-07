@@ -12,10 +12,10 @@ import SyncedInputs from "./_SyncedInputs";
 import { breakpoints } from "./_helpers";
 
 document.addEventListener("DOMContentLoaded", function () {
-	// initPopups()
+	initPopups();
 	// initTabs()
 	// initPhoneMask()
-	// initQuantity()
+	initQuantity();
 	// initSpoilers()
 	// initInputControllerGroups()
 	// initSyncedInputs()

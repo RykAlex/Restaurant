@@ -1,7 +1,7 @@
 .footer {
-	@include adaptiv-value("padding-top", 51, 24, 0);
-	@include adaptiv-value("padding-bottom", 40, 26, 0);
-	@include adaptiv-value("margin-top", 100, 80, 0);
+	// @include adaptiv-value("padding-top", 51, 24, 0);
+	// @include adaptiv-value("padding-bottom", 40, 26, 0);
+	// @include adaptiv-value("margin-top", 100, 80, 0);
 }
 .footer__wrapper {
 	display: flex;
@@ -11,8 +11,8 @@
 }
 
 .footer__logo-img {
-	@include adaptiv-value("width", 300, 196, 0);
-	@include adaptiv-value("height", 58, 38, 0);
+	// @include adaptiv-value("width", 300, 196, 0);
+	// @include adaptiv-value("height", 58, 38, 0);
 	// & img {
 	// 	width: 100px;
 	// 	height: 100%;
@@ -27,9 +27,9 @@
 	margin-right: 126px;
 }
 .contacts__text {
-	@include adaptiv-font(24, 18);
+	// @include adaptiv-font(24, 18);
 	font-weight: 400;
-	@include adaptiv-value("margin-bottom", 24, 8, 0);
+	// @include adaptiv-value("margin-bottom", 24, 8, 0);
 }
 .contacts__phone {
 	display: flex;
@@ -51,13 +51,13 @@
 	margin-right: 5px;
 }
 .contacts__phone-number {
-	@include adaptiv-font(16, 12);
+	// @include adaptiv-font(16, 12);
 }
 
 .socials__text {
-	@include adaptiv-font(24, 18);
+	// @include adaptiv-font(24, 18);
 	font-weight: 400;
-	@include adaptiv-value("margin-bottom", 22, 5, 0);
+	// @include adaptiv-value("margin-bottom", 22, 5, 0);
 }
 .socials__icon {
 	display: flex;
@@ -80,7 +80,7 @@
 }
 .copyright__conpany,
 .copyright__design {
-	@include adaptiv-font(16, 12);
+	// @include adaptiv-font(16, 12);
 }
 
 @media screen and (max-width: $mobile) {

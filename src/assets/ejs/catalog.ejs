@@ -3,7 +3,7 @@
 		<div class="catalog__wrapper">
 			<div class="cart__wrapper">
 				<div class="cart__amount">
-					<div class="cart__title">Корзина</div>
+					<div class="title title--cart">Корзина</div>
 					<div class="cart__quantity">4</div>
 				</div>
 				<div class="cart__item-wrapper">
@@ -17,14 +17,16 @@
 							<div class="cart__item-content-weigth">512г</div>
 							<div class="cart__item-content-cost">550₽</div>
 						</div>
-						<div class="cart__item-quantity">
-							<button class="cart__item-amount">
-								<div class="icon-minus"></div>
-							</button>
-							<input type="number" name="" value="0" />
-							<button class="cart__item-amount">
-								<div class="icon-add"></div>
-							</button>
+						<div class="quantity">
+							<div class="quantity__button quantity__button--subtract">-</div>
+							<input
+								type="number"
+								class="quantity__input"
+								min="0"
+								max="10"
+								step="2"
+							/>
+							<div class="quantity__button quantity__button--add">+</div>
 						</div>
 					</div>
 					<!-- / Карточка товара в корзине -->
@@ -38,14 +40,17 @@
 							<div class="cart__item-content-weigth">180г</div>
 							<div class="cart__item-content-cost">245₽</div>
 						</div>
-						<div class="cart__item-quantity">
-							<button class="cart__item-amount">
-								<div class="icon-minus"></div>
-							</button>
-							<input type="number" name="" value="0" />
-							<button class="cart__item-amount">
-								<div class="icon-add"></div>
-							</button>
+						<div class="quantity">
+							<div class="quantity__button quantity__button--subtract">-</div>
+							<input
+								type="number"
+								value="0"
+								class="quantity__input"
+								min="0"
+								max="10"
+								step="1"
+							/>
+							<div class="quantity__button quantity__button--add">+</div>
 						</div>
 					</div>
 					<!-- / Карточка товара в корзине -->
@@ -63,22 +68,14 @@
 							<div class="quantity__button quantity__button--subtract">-</div>
 							<input
 								type="number"
+								value="0"
 								class="quantity__input"
 								min="0"
 								max="10"
-								step="2"
+								step="1"
 							/>
 							<div class="quantity__button quantity__button--add">+</div>
 						</div>
-						<!-- <div class="cart__item-quantity">
-							<button class="cart__item-amount">
-								<div class="icon-minus"></div>
-							</button>
-							<input type="number" name="" value="0" />
-							<button class="cart__item-amount">
-								<div class="icon-add"></div>
-							</button>
-						</div> -->
 					</div>
 					<!-- / Карточка товара в корзине -->
 				</div>
@@ -96,10 +93,14 @@
 			</div>
 
 			<div class="products__wrapper">
-				<h2 class="catalog__title">Бургеры</h2>
+				<h2 class="title title--products">Бургеры</h2>
 				<div class="catalog__products">
 					<div class="products__item">
-						<div class="card">
+						<div
+							class="card"
+							data-popup-target="popup_name"
+							data-popup-control="open"
+						>
 							<div class="card__img">
 								<img src="./assets/static/img/meet_bomb.png" alt="" />
 							</div>

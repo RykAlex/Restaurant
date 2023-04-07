@@ -1,20 +1,20 @@
 .quantity {
 	display: flex;
 	align-items: center;
-	// padding-left: calc(8px + 4 * ((100vw - 320px) / 1600));
-	// padding-right: calc(8px + 4 * ((100vw - 320px) / 1600));
-	// padding-top: calc(7px + 2 * ((100vw - 320px) / 1600));
-	// padding-bottom: calc(7px + 2 * ((100vw - 320px) / 1600));
-	// border-radius: calc(8px + 4 * ((100vw - 320px) / 1600));
 	background-color: #f2f2f3;
+	border-radius: 12px;
+	font-size: 16px;
+	font-weight: 400;
 
 	&__input {
 		border: none;
 		background: $gray;
+		text-align: center;
 	}
 
 	&__button {
 		cursor: pointer;
+		padding: 9px 12px;
 
 		&--add {
 		}

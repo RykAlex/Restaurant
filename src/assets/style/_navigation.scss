@@ -10,6 +10,7 @@ ul.nav__list {
 	justify-content: space-between;
 	overflow-x: auto;
 	overflow-y: hidden;
+	gap: 24px;
 }
 
 a.nav__link {
@@ -40,5 +41,20 @@ a.nav__link {
 	& img {
 		height: 100%;
 		width: 100%;
+	}
+}
+
+@media screen and (max-width: $tablet) {
+	.nav {
+		margin-top: 30px;
+	}
+	.nav__list {
+		gap: 12px;
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.nav__list {
+		gap: 8px;
 	}
 }

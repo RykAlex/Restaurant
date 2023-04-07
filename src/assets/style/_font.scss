@@ -13,28 +13,69 @@
 	font-weight: 125 950;
 	font-style: normal;
 }
-$maxWidth: 1280;
-@mixin adaptiv-font($pcSize, $mobSize) {
-	$addSize: $pcSize - $mobSize;
-	$maxWidth: $maxWidth - 320;
-	font-size: calc(
-		#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth})
-	);
+
+body,
+input {
+	font-size: 16px;
+	font-weight: 400;
+	@media screen and (max-width: $mobile) {
+		font-size: 12px;
+	}
+}
+.title {
+	font-size: 24px;
+	font-weight: 400;
+	@media screen and (max-width: $mobile) {
+		font-size: 18px;
+	}
+}
+
+.subtitle,
+%subtitle {
+	@media screen and (max-width: $mobile) {
+	}
+}
+
+.text {
+	font-size: 16px;
+	font-weight: 400;
+	@media screen and (max-width: $tablet) {
+		font-size: 12px;
+	}
+	@media screen and (max-width: $mobile) {
+		font-size: 12px;
+	}
+}
+
+a {
+	color: inherit;
 }
 
 h1,
 .h1,
 %h1 {
-	@include adaptiv-font(50, 30);
+	font-size: 50px;
 	font-weight: 800;
+
+	@media screen and (max-width: $tablet) {
+		font-size: 36px;
+	}
 	@media screen and (max-width: $mobile) {
+		font-size: 30px;
 	}
 }
 
 h2,
 .h2,
 %h2 {
+	font-size: 40px;
+	font-weight: 600;
+
+	@media screen and (max-width: $tablet) {
+		font-size: 28px;
+	}
 	@media screen and (max-width: $mobile) {
+		font-size: 28px;
 	}
 }
 
@@ -64,23 +105,4 @@ h6,
 %h6 {
 	@media screen and (max-width: $mobile) {
 	}
-}
-
-.subtitle,
-%subtitle {
-	@media screen and (max-width: $mobile) {
-	}
-}
-
-body,
-input {
-	@media screen and (max-width: $mobile) {
-	}
-}
-
-a {
-	color: inherit;
-}
-p {
-	@include adaptiv-font(16, 12);
 }
