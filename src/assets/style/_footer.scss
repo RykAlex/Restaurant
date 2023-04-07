@@ -1,35 +1,37 @@
 .footer {
-	// @include adaptiv-value("padding-top", 51, 24, 0);
-	// @include adaptiv-value("padding-bottom", 40, 26, 0);
-	// @include adaptiv-value("margin-top", 100, 80, 0);
+	margin-top: 100px;
+	padding-top: 51px;
+	padding-bottom: 40px;
 }
 .footer__wrapper {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	margin-bottom: 34px;
+	margin-bottom: 44px;
 }
 
 .footer__logo-img {
-	// @include adaptiv-value("width", 300, 196, 0);
-	// @include adaptiv-value("height", 58, 38, 0);
-	// & img {
-	// 	width: 100px;
-	// 	height: 100%;
-	// 	object-fit: cover;
-	// }
+	width: 300px;
+	height: 58px;
+	& img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
 }
 .footer__wrapper-contacts {
 	display: flex;
 	justify-content: space-between;
 }
 .footer__contacts {
+	white-space: nowrap;
 	margin-right: 126px;
 }
 .contacts__text {
-	// @include adaptiv-font(24, 18);
+	font-size: 24px;
 	font-weight: 400;
-	// @include adaptiv-value("margin-bottom", 24, 8, 0);
+
+	margin-bottom: 24px;
 }
 .contacts__phone {
 	display: flex;
@@ -51,13 +53,14 @@
 	margin-right: 5px;
 }
 .contacts__phone-number {
-	// @include adaptiv-font(16, 12);
+	font-size: 16px;
 }
 
 .socials__text {
-	// @include adaptiv-font(24, 18);
+	font-size: 24px;
 	font-weight: 400;
-	// @include adaptiv-value("margin-bottom", 22, 5, 0);
+
+	margin-bottom: 22px;
 }
 .socials__icon {
 	display: flex;
@@ -80,13 +83,49 @@
 }
 .copyright__conpany,
 .copyright__design {
-	// @include adaptiv-font(16, 12);
+	font-size: 16px;
+}
+
+@media screen and (max-width: $tablet) {
+	.footer {
+		margin-top: 80px;
+		padding-top: 24px;
+		padding-bottom: 26px;
+	}
+	.footer__wrapper {
+		margin-bottom: 40px;
+	}
+	.footer__logo-img {
+		width: 196px;
+		height: 38px;
+	}
+	.footer__contacts {
+		margin-right: 177px;
+	}
+	.contacts__text {
+		font-size: 18px;
+
+		margin-bottom: 8px;
+	}
+	.contacts__phone-number {
+		font-size: 12px;
+	}
+	.socials__text {
+		font-size: 18px;
+		font-weight: 400;
+
+		margin-bottom: 5px;
+	}
+	.copyright__conpany,
+	.copyright__design {
+		font-size: 12px;
+	}
 }
 
 @media screen and (max-width: $mobile) {
 	.footer__wrapper {
 		flex-direction: column;
-		margin-bottom: 22px;
+		margin-bottom: 34px;
 	}
 	.footer__logo-img {
 		margin-bottom: 24px;
