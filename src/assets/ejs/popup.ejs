@@ -1,6 +1,51 @@
 <div class="popup" data-popup="popup_name">
-	<div class="popup__inner" data-popup-inner></div>
+	<div class="popup__inner" data-popup-inner>
+		<h2>Мясная бомба</h2>
+		<div class="popup__inner-wrapper">
+			<div class="card__img card__img--popup">
+				<img src="/src/assets/static/img/meet_bomb.png" alt="" />
+			</div>
+			<div class="product__content">
+				<div class="product__content-discr">
+					Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего
+					мяса покорит вас своей сочностью, а хрустящие листья салата добавят
+					свежести.
+				</div>
+				<div class="product__content-structure">
+					<p>Состав:</p>
+					<ul class="structure__list">
+						<li class="structure__list-item">Пшеничная булочка</li>
+						<li class="structure__list-item">Котлета из говядины</li>
+						<li class="structure__list-item">Красный лук</li>
+						<li class="structure__list-item">Листья салата</li>
+						<li class="structure__list-item">Соус горчичный</li>
+					</ul>
+					<div class="card__weigth card__weigth--popup">520г, ккал 430</div>
+				</div>
+			</div>
+		</div>
+		<div class="add__protuct-wrapper">
+			<div class="add__protuct">
+				<button type="button" class="card__btn card__btn--popup">
+					Добавить
+				</button>
+				<div class="quantity">
+					<div class="quantity__button quantity__button--subtract">-</div>
+					<input
+						type="number"
+						value="0"
+						class="quantity__input"
+						min="0"
+						max="10"
+						step="1"
+					/>
+					<div class="quantity__button quantity__button--add">+</div>
+				</div>
+			</div>
+			<div class="add__protuct-cost">689₽</div>
+		</div>
+	</div>
 </div>
-<div data-popup-target="popup_name" data-popup-control="open"></div>
+<!-- <div data-popup-target="popup_name" data-popup-control="open"></div>
 <div data-popup-target="popup_name" data-popup-control="close"></div>
-<div data-popup-target="popup_name" data-popup-control="toggle"></div>
+<div data-popup-target="popup_name" data-popup-control="toggle"></div> -->

@@ -1,169 +1,181 @@
 <section class="catalog">
 	<div class="container">
 		<div class="catalog__wrapper">
-			<div class="cart__wrapper">
-				<div class="cart__amount">
-					<div class="title title--cart">Корзина</div>
-					<div class="cart__quantity">4</div>
-				</div>
-				<div class="cart__item-wrapper">
-					<!-- Карточка товара в корзине -->
-					<div class="cart__item">
-						<div class="cart__item-img">
-							<img src="./assets/static/img/super_cheese.png" alt="" />
-						</div>
-						<div class="cart__item-content">
-							<div class="cart__item-content-title">Супер сырный</div>
-							<div class="cart__item-content-weigth">512г</div>
-							<div class="cart__item-content-cost">550₽</div>
-						</div>
-						<div class="quantity">
-							<div class="quantity__button quantity__button--subtract">-</div>
-							<input
-								type="number"
-								value="0"
-								class="quantity__input"
-								min="0"
-								max="10"
-								step="1"
-							/>
-							<div class="quantity__button quantity__button--add">+</div>
-						</div>
-					</div>
-					<!-- / Карточка товара в корзине -->
-					<!-- Карточка товара в корзине -->
-					<div class="cart__item">
-						<div class="cart__item-img">
-							<img src="./assets/static/img/french-fries.png" alt="" />
-						</div>
-						<div class="cart__item-content">
-							<div class="cart__item-content-title">Картошка фри</div>
-							<div class="cart__item-content-weigth">180г</div>
-							<div class="cart__item-content-cost">245₽</div>
-						</div>
-						<div class="quantity">
-							<div class="quantity__button quantity__button--subtract">-</div>
-							<input
-								type="number"
-								value="0"
-								class="quantity__input"
-								min="0"
-								max="10"
-								step="1"
-							/>
-							<div class="quantity__button quantity__button--add">+</div>
-						</div>
-					</div>
-					<!-- / Карточка товара в корзине -->
-					<!-- Карточка товара в корзине -->
-					<div class="cart__item">
-						<div class="cart__item-img">
-							<img src="./assets/static/img/hotdog-spacy.png" alt="" />
-						</div>
-						<div class="cart__item-content">
-							<div class="cart__item-content-title">Жгучий хот-дог</div>
-							<div class="cart__item-content-weigth">245г</div>
-							<div class="cart__item-content-cost">239₽</div>
-						</div>
-						<div class="quantity">
-							<div class="quantity__button quantity__button--subtract">-</div>
-							<input
-								type="number"
-								value="0"
-								class="quantity__input"
-								min="0"
-								max="10"
-								step="1"
-							/>
-							<div class="quantity__button quantity__button--add">+</div>
-						</div>
-					</div>
-					<!-- / Карточка товара в корзине -->
-				</div>
-				<div class="cart__total">
-					<div class="cart__total-text">Итого</div>
-					<div class="cart__total-amoumt">1279₽</div>
-				</div>
-				<button type="button" class="order__btn">Оформить заказ</button>
-				<div class="delivery__wrapper">
-					<div class="delivery__img">
-						<img src="./assets/static/img/icon/delivery.svg" alt="" />
-					</div>
-					<div class="delivery__text">Бесплатная доставка</div>
-				</div>
+			<div class="section__wrapper-title">
+				<h2 class="title title--products">Бургеры</h2>
 			</div>
 
-			<div class="products__wrapper">
-				<h2 class="title title--products">Бургеры</h2>
-				<div class="catalog__products">
-					<div class="products__item">
-						<div
-							class="card"
-							data-popup-target="popup_name"
-							data-popup-control="open"
-						>
-							<div class="card__img">
-								<img src="./assets/static/img/meet_bomb.png" alt="" />
-							</div>
-							<div class="card__cost">689₽</div>
-							<div class="card__title">Мясная бомба</div>
-							<div class="card__weigth">520г</div>
-							<button type="button" class="card__btn">Добавить</button>
-						</div>
+			<div class="common__wrapper">
+				<div class="cart__wrapper">
+					<div class="cart__amount">
+						<div class="title title--cart">Корзина</div>
+						<div class="cart__quantity">4</div>
 					</div>
-					<div class="products__item">
-						<div class="card">
-							<div class="card__img">
-								<img src="./assets/static/img/super_cheese.png" alt="" />
+					<div class="cart__item-wrapper">
+						<!-- Карточка товара в корзине -->
+						<div class="cart__item">
+							<div class="cart__item-img">
+								<img src="/src/assets/static/img/super_cheese.png" alt="" />
 							</div>
-							<div class="card__cost">550₽</div>
-							<div class="card__title">Супер сырный</div>
-							<div class="card__weigth">512г</div>
-							<button type="button" class="card__btn">Добавить</button>
+							<div class="cart__item-content">
+								<div class="cart__item-content-title">Супер сырный</div>
+								<div class="cart__item-content-weigth">512г</div>
+								<div class="cart__item-content-cost">550₽</div>
+							</div>
+							<div class="quantity">
+								<div class="quantity__button quantity__button--subtract">-</div>
+								<input
+									type="number"
+									value="0"
+									class="quantity__input"
+									min="0"
+									max="10"
+									step="1"
+								/>
+								<div class="quantity__button quantity__button--add">+</div>
+							</div>
 						</div>
-					</div>
-					<div class="products__item">
-						<div class="card">
-							<div class="card__img">
-								<img src="./assets/static/img/satisfying.png" alt="" />
+						<!-- / Карточка товара в корзине -->
+						<!-- Карточка товара в корзине -->
+						<div class="cart__item">
+							<div class="cart__item-img">
+								<img src="/src/assets/static/img/french-fries.png" alt="" />
 							</div>
-							<div class="card__cost">639₽</div>
-							<div class="card__title">Сытный</div>
-							<div class="card__weigth">580г</div>
-							<button type="button" class="card__btn">Добавить</button>
+							<div class="cart__item-content">
+								<div class="cart__item-content-title">Картошка фри</div>
+								<div class="cart__item-content-weigth">180г</div>
+								<div class="cart__item-content-cost">245₽</div>
+							</div>
+							<div class="quantity">
+								<div class="quantity__button quantity__button--subtract">-</div>
+								<input
+									type="number"
+									value="0"
+									class="quantity__input"
+									min="0"
+									max="10"
+									step="1"
+								/>
+								<div class="quantity__button quantity__button--add">+</div>
+							</div>
 						</div>
-					</div>
-					<div class="products__item">
-						<div class="card">
-							<div class="card__img">
-								<img src="./assets/static/img/heavy-blow.png" alt="" />
+						<!-- / Карточка товара в корзине -->
+						<!-- Карточка товара в корзине -->
+						<div class="cart__item">
+							<div class="cart__item-img">
+								<img src="/src/assets/static/img/hotdog-spacy.png" alt="" />
 							</div>
-							<div class="card__cost">480₽</div>
-							<div class="card__title">Тяжелый удар</div>
-							<div class="card__weigth">470г</div>
-							<button type="button" class="card__btn">Добавить</button>
+							<div class="cart__item-content">
+								<div class="cart__item-content-title">Жгучий хот-дог</div>
+								<div class="cart__item-content-weigth">245г</div>
+								<div class="cart__item-content-cost">239₽</div>
+							</div>
+							<div class="quantity">
+								<div class="quantity__button quantity__button--subtract">-</div>
+								<input
+									type="number"
+									value="0"
+									class="quantity__input"
+									min="0"
+									max="10"
+									step="1"
+								/>
+								<div class="quantity__button quantity__button--add">+</div>
+							</div>
 						</div>
+						<!-- / Карточка товара в корзине -->
 					</div>
-					<div class="products__item">
-						<div class="card">
-							<div class="card__img">
-								<img src="./assets/static/img/eternal-classics.png" alt="" />
-							</div>
-							<div class="card__cost">450₽</div>
-							<div class="card__title">Вечная классика</div>
-							<div class="card__weigth">450г</div>
-							<button type="button" class="card__btn">Добавить</button>
+					<div class="cart__total">
+						<div class="cart__total-text">Итого</div>
+						<div class="cart__total-amoumt">1279₽</div>
+					</div>
+					<button type="button" class="order__btn">Оформить заказ</button>
+					<div class="delivery__wrapper">
+						<div class="delivery__img">
+							<img src="/src/assets/static/img/icon/delivery.svg" alt="" />
 						</div>
+						<div class="delivery__text">Бесплатная доставка</div>
 					</div>
-					<div class="products__item">
-						<div class="card">
-							<div class="card__img">
-								<img src="./assets/static/img/italian.png" alt="" />
+				</div>
+
+				<div class="products__wrapper">
+					<h2 class="title title--products title--products-mob">Бургеры</h2>
+					<div class="catalog__products">
+						<div class="products__item">
+							<div
+								class="card"
+								data-popup-target="popup_name"
+								data-popup-control="open"
+							>
+								<div class="card__img">
+									<img src="/src/assets/static/img/kotik.jpeg" alt="" />
+								</div>
+								<div class="card__cost">689₽</div>
+								<div class="card__title">Мясная бомба</div>
+								<div class="card__weigth">520г</div>
+								<button type="button" class="card__btn">Добавить</button>
 							</div>
-							<div class="card__cost">560₽</div>
-							<div class="card__title">Итальянский</div>
-							<div class="card__weigth">510г</div>
-							<button type="button" class="card__btn">Добавить</button>
+						</div>
+						<div class="products__item">
+							<div class="card">
+								<div class="card__img">
+									<img src="/src/assets/static/img/super_cheese.png" alt="" />
+								</div>
+								<div class="card__cost">550₽</div>
+								<div class="card__title">Супер сырный</div>
+								<div class="card__weigth">512г</div>
+								<button type="button" class="card__btn">Добавить</button>
+							</div>
+						</div>
+						<div class="products__item">
+							<div class="card">
+								<div class="card__img">
+									<img src="/src/assets/static/img/satisfying.png" alt="" />
+								</div>
+								<div class="card__cost">639₽</div>
+								<div class="card__title">Сытный</div>
+								<div class="card__weigth">580г</div>
+								<button type="button" class="card__btn">Добавить</button>
+							</div>
+						</div>
+						<div class="products__item">
+							<div class="card">
+								<div class="card__img">
+									<img src="/src/assets/static/img/heavy-blow.png" alt="" />
+								</div>
+								<div class="card__cost">480₽</div>
+								<div class="card__title">Тяжелый удар</div>
+								<div class="card__weigth">470г</div>
+								<button type="button" class="card__btn">Добавить</button>
+							</div>
+						</div>
+						<div class="products__item">
+							<div class="card">
+								<div class="card__img">
+									<img
+										src="/src/assets/static/img/eternal-classics.png"
+										alt=""
+									/>
+								</div>
+								<div class="card__cost">450₽</div>
+								<div class="card__title">Вечная классика</div>
+								<div class="card__weigth">450г</div>
+								<button type="button" class="card__btn">Добавить</button>
+							</div>
+						</div>
+						<div class="products__item">
+							<div class="card">
+								<div class="card__img">
+									<img src="/src/assets/static/img/italian.png" alt="" />
+								</div>
+								<div class="card__cost">560₽</div>
+								<div class="card__title">Итальянский</div>
+								<div class="card__title">Итальянский</div>
+								<div class="card__title">Итальянский</div>
+								<div class="card__title">Итальянский</div>
+								<div class="card__weigth">510г</div>
+								<button type="button" class="card__btn">Добавить</button>
+							</div>
 						</div>
 					</div>
 				</div>
