@@ -20,10 +20,10 @@
 .common__wrapper {
 	display: flex;
 	align-items: flex-start;
+	justify-content: space-between;
 }
 .cart__wrapper {
 	width: 25%;
-	flex-grow: 1;
 
 	margin-right: 30px;
 	padding: 24px 16px;
@@ -123,6 +123,7 @@
 
 // Каталог товара
 .products__wrapper {
+	width: 100%;
 }
 .catalog__products {
 	display: grid;
@@ -132,6 +133,7 @@
 // по второму пункту
 .products__item {
 	display: flex;
+	justify-content: center;
 }
 .card {
 	display: flex;
@@ -144,14 +146,17 @@
 
 // по третьему пункту
 .card__img {
-	width: auto;
-	max-height: 220px;
-	flex-grow: 1;
+	width: 276px;
+	height: 220px;
 
 	& img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
 		border-radius: 12px;
 	}
 }
+
 .card__cost {
 	font-size: 24px;
 	font-weight: 600;
@@ -209,28 +214,14 @@
 		margin-top: 36px;
 	}
 	.catalog__products {
-		grid-template-columns: repeat(2, minmax(137px, 1fr));
-		gap: 10px;
+		gap: 20px;
 	}
-	.title--products {
-		display: none;
-	}
-	.title--products-mob {
-		display: flex;
-		font-size: 28px;
-		padding-left: 0;
 
-		margin-bottom: 16px;
-	}
-	.common__wrapper {
-		flex-direction: column;
-	}
 	.cart__wrapper {
-		margin-top: 36px;
+		width: 25%;
 		margin-right: 30px;
 		padding: 16px 10px;
 		border-radius: 12px;
-		flex-shrink: 1;
 	}
 	.cart__amount {
 		margin-bottom: 8px;
@@ -261,6 +252,8 @@
 		border-radius: 12px;
 	}
 	.card__img {
+		width: 137px;
+		height: 120px;
 		border-radius: 8px;
 	}
 	.card__cost {
@@ -293,9 +286,10 @@
 	}
 	.catalog__wrapper {
 		flex-direction: column;
-		align-items: center;
 	}
-
+	.common__wrapper {
+		flex-direction: column;
+	}
 	.cart__wrapper {
 		margin-top: 15px;
 		margin-right: 0;
@@ -305,5 +299,28 @@
 	}
 	.title--cart {
 		font-size: 16px;
+	}
+	.catalog__products {
+		grid-template-columns: repeat(4, minmax(137px, 1fr));
+		gap: 20px;
+	}
+	.card__img {
+		height: 120px;
+	}
+	.title--products {
+		display: none;
+	}
+	.title--products-mob {
+		display: flex;
+		font-size: 28px;
+		padding-left: 0;
+
+		margin-bottom: 16px;
+	}
+}
+@media screen and (max-width: 425px) {
+	.catalog__products {
+		grid-template-columns: repeat(2, minmax(137px, 1fr));
+		gap: 10px;
 	}
 }
