@@ -304,8 +304,8 @@
 		gap: 20px;
 	}
 	.card__img {
-		width: 137px;
-		height: 120px;
+		width: 165px;
+		height: 128px;
 	}
 	.title--products {
 		display: none;
@@ -319,6 +319,10 @@
 	}
 }
 @media screen and (max-width: 425px) {
+	.card__img {
+		width: 137px;
+		height: 120px;
+	}
 	.catalog__products {
 		grid-template-columns: repeat(2, minmax(137px, 1fr));
 		gap: 10px;
